@@ -15,12 +15,12 @@ def blank_word(wordemp):
 if __name__ == "__main__":
     fullword=random_word()
     empword=blank_word(fullword)
-
-    name = input("Enter your letter: ")
+   
     i=0
     while i < len(fullword):
-    if name== fullword[0]
-    i +=1
+        name = input("Enter your letter: ")
+        if name== fullword[0]:
+            i += 1
 
 
     
