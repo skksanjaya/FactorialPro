@@ -6,10 +6,11 @@ class StringManupulator:
         words= self.text.split()
         return len(words)
     
-    
-    
-if __name__ == "__main__":
+def main():
     name=StringManupulator(input("Enter your sentence: "))
     result=name.find_wordcount()
     print(result)
-
+    
+    
+if __name__ == "__main__":
+        main()
