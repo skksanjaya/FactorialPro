@@ -3,21 +3,22 @@ class TxtFile:
         self.path=file_path
 
     def read_line(self):
-        with open(self.path, "r") as file:
+        with open(self.path, "r", encoding="UTF-8") as file:
             lines = file.readlines()
             for line in lines:
                 print(line[0:-1])
 
-    def write_line(self,increase):
-        with open(self.path, "w") as file:
-            file.write("Hello, World\n")
-            file.write("Hello, World\n")
+    def write_line(self,cont):
+        with open(self.path, "w", encoding="UTF-8") as file:
+            file.write(cont)
+            file.close()
+
 
 def main():
      filePath = r"C:\Users\DELL\Documents\02082025_SoftwareEngineering\3week\demo.txt"
      p1=TxtFile(filePath)
      p1.read_line()
-     #p1.write_line()
+     p1.write_line("Hello 1 st line")
     
 
 
