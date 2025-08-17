@@ -1,3 +1,5 @@
 We can identify main entities as Student, Lectures, Courses, classes. 
-Student has information about identify/Track each students. 
-Lectures to conduct each courses.
+Student has information about identify/Track each students. student has attributes student ID, Name, ClassID. primary key is StudentID
+Student has to attend the classes. Class has attributes class ID and class name. Class ID is Primary key
+Each Classes has courses to conduct. Courses has attributes Subject ID, Subject Name, ClassID. Primary Key is Subject ID
+Lectures to conduct each courses. Lecturer has attributes LecturerID, Name, SubjectID,ClassID. Primary key is Lecturer ID
