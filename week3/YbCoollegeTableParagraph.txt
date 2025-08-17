@@ -1,0 +1,3 @@
+We can identify main entities as Student, Lectures, Courses, classes. 
+Student has information about identify/Track each students. 
+Lectures to conduct each courses.

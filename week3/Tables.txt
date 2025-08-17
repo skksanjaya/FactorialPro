@@ -1,0 +1,30 @@
+Student Table
+
+StudentID, Primary key
+Name
+Class ID,   FK from classes
+
+Class Table
+
+ClassID, Primary key 
+ClassName
+
+Subject Table
+
+SubjectID, Primary key
+SubjectName
+
+Lecture Table
+
+LectureID Primary key 
+LectureName 
+
+MiddleJoin Table
+
+LectureID, Fk Lecture Table
+SubjectID, Fk Subject Table
+ClassID, Fk Class Table
+
+
+
+
