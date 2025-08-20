@@ -31,16 +31,18 @@ class DataAnalizer:
         else:
             print("Load data!")
             return None
-
+def main():
+        processor = DataAnalizer(r"C:\Users\DELL\Documents\02082025_SoftwareEngineering\3week\google_review_ratings.csv")
+    
+        processor.get_data()
+    
+        processor.convert_to_parquet("dataset.parquet")
+    
+        stats = processor.compute_statistics()
+        if stats is not None:
+            print(stats)
 
 if __name__ == "__main__":
+    main()
 
-    processor = DataAnalizer(r"C:\Users\DELL\Documents\02082025_SoftwareEngineering\3week\google_review_ratings.csv")
-    
-    processor.get_data()
-    
-    processor.convert_to_parquet("dataset.parquet")
-    
-    stats = processor.compute_statistics()
-    if stats is not None:
-       print(stats)
+
