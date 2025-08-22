@@ -1,29 +1,29 @@
 Student Table
 
-StudentID, Primary key
-Name
-Class ID,   FK from classes
+StudentID Int, Primary key
+Name Varchar2
+ClassID Int,   FK from classes
 
 Class Table
 
-ClassID, Primary key 
-ClassName
+ClassID Int, Primary key 
+ClassName varchar2
 
 Subject Table
 
-SubjectID, Primary key
-SubjectName
+SubjectID Int, Primary key
+SubjectName varchar2
 
 Lecture Table
 
-LectureID Primary key 
-LectureName 
+LectureID Int, Primary key 
+LectureName varchar2 
 
 MiddleJoin Table
 
-LectureID, Fk Lecture Table
-SubjectID, Fk Subject Table
-ClassID, Fk Class Table
+LectureID Int, Fk Lecture Table
+SubjectID Int, Fk Subject Table
+ClassID Int, Fk Class Table
 
 
 
